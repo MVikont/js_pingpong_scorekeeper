@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="score.css">
+        <title>Scorekeeper</title>
+    </head>
+    <body>
+        <div class="container">
+            <img src="racket.jpg" alt="A ping pong racket and a white ball on a ping pong table." class="racket">
+            <div class="setbutton">
+                <button id="setnames" class="btn">Set Players</button>
+            </div>
+            <h1>
+                <span class="left">0</span> <span class="to">to</span> <span class="right">0</span>
+            </h1>
+            <div class="buttons">
+                <button id="playerone" class="btn">Player 1</button>
+                <button id="playertwo" class="btn">Player 2</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+            <form action="/google">
+                <label for="playto">Playing to</label>
+                <select name="playto" id="playto">
+                    <option value="5" class="three">5</option>
+                    <option value="11" class="five">11</option>
+                    <option value="21" class="seven">21</option>
+                </select>
+                <h2><i>PingPong <br>Score Keeper</i></h2>
+            </form>
+        </div>
+        <script src="score.js"></script>
+    </body>
+</html>
